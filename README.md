@@ -12,13 +12,13 @@ Configuration is stored in `proxy.ini`. It has the following format:
 
 ```toml
 [Webservice]
-Bind = :8080                                              // the service will listen for requests on this address
+Bind = :8080                                              # the service will listen for requests on this address
 
 [Proxy]
-Server = https://gateway.example.com/secured/v1           // the target server
+Server = https://gateway.example.com/secured/v1           # the target server
 
 [OAuth2]
-TokenEndpoint = https://gateway.example.com/oauth2/token  // OAuth2 token endpoint
-ClientId = qwxyz123                                       // your OAuth2 client id
-ClientSecret = yxcvb123                                   // your OAuth2 client secret
+TokenEndpoint = https://gateway.example.com/oauth2/token  # OAuth2 token endpoint
+ClientId = qwxyz123                                       # your OAuth2 client id
+ClientSecret = yxcvb123                                   # your OAuth2 client secret
 ```
