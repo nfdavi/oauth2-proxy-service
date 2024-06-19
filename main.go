@@ -27,6 +27,7 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
+			proxyReq.Header = incomingReq.Header.Clone()
 			proxyReq.Header.Add("Authorization", token.TokenType+" "+token.AccessToken)
 			proxyResp, err := http.DefaultClient.Do(proxyReq)
 			defer func(Body io.ReadCloser) {
